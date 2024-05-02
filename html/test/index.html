@@ -1,0 +1,111 @@
+<!-- 
+    브라우저가 기본적으로 프로젝트 단위로 화면이 출력될 때 
+    index라는 이름을 가진 html 파일을 우선적으로 찾아서 열게되기 때문
+
+    index.html 소문자로 설정한다
+-->
+
+<!-- 
+
+    태그들은 각자의 영역을 가진다.
+
+-->
+
+<!-- 
+    !DOCTYPE html 
+    문서(PAGE) 의 HTML의 "버전"을 지정
+    
+    HTML5 (표준) - 웹 표준
+
+    ex) HTML5 (표준)이 아닌 경우
+    !DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 10. Trans ..."
+-->
+
+<!-- 
+    - HTML 태그
+        - HTML 전체
+        - HTML 문서가 어디에서 시작하고, 어디에서 끝나는지 알려주는 역활
+ -->
+
+<!-- 
+    head 태그
+    문서의 정보를 나타내는 범위
+    웹페이지 제목, 설명, 파일 위치, CSS
+    웹페이지의 보이지 않는 정보를 작성
+
+    css
+-->
+
+<!-- 
+    body 태그
+        문서의 구조를 나타내는 범위
+        사용자 화면을 통해 보여지는
+        로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지 같은
+        웹페이지의 보여지는 구조를 작성하는 범위
+-->
+
+<!-- 
+    link
+    head태그 내부에 명시하며, 해당 태그들의 내용을 가져오기 위한 내용이 필요하다.
+
+    rel : html 에 적용될 속성을 의미
+        rel을 icon으로 설정하고 이미지 파일을 연결하면 탭에 대표 이미지로 표기가 표시된다.
+        대표 이미지를 favicon (파비콘)으로 불리며 해당하는 파일명으로 사용하는것이 좋다.
+
+    href : 해당하는 파일의 링크를 의미
+
+-->
+
+<!-- 
+    script
+    js 파일과의 연결을 수행한다.
+
+    src를 이용해서 js 파일을 가져오는 경우
+
+   <script src="./main.js"></script>
+
+   script를 직접 사용하는 방법 2가지가 존재한다.
+   <script >
+        console.log(123)
+    </script>
+ 
+-->
+
+<!-- 
+    style 태그 
+    CSS 파일의 속성을 같이 사용 가능하다
+  -->
+
+    <!-- 
+    title 태그 HTML 문서의 제목을 명시
+    웹 페이지 탭에 직접 명시 된다.
+   -->
+
+
+   <!-- 
+    meta 태그
+        링크 스타일 스크립트로 나타낼수 없는 모든 정보를 표기하는데 사용한다.
+
+        meta는 정보를 표기하고,
+        name이 어떤 속성인지 Content="해당 내용"
+
+        viewport
+        웹표준 브라우저 보여지는 영역
+
+        모바일 장치에만 해당됨
+    -->
+<!DOCTYPE html>
+<html lang=" ko">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    
+    <style>
+      div {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello World!</div>
+  </body>
+</html>
